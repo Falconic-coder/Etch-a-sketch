@@ -1,0 +1,111 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 0;
+    margin: 5%;
+}
+
+h1, p{
+    text-align: center;
+}
+
+h1{
+    font-size: 4em;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    flex: 1;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.customizationArea, .customizationArea > .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+
+.customizationArea > .buttons > div > button {
+    font-size: larger;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    background-color: #e5e7eb;
+    transition: 0.1s ease;
+}
+
+.customizationArea > .buttons > div > button:hover{
+    transform: scale(1.1);
+}
+
+.colourPicker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb;
+    border-radius: 100%;
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    border: none;
+    transition: 0.1s ease;
+    margin-bottom: 10px;
+}
+
+input[type='color']:hover{
+    transform: scale(1.1);
+}
+
+input[type='color']::-webkit-color-swatch{
+    border-radius: 50%;
+}
+
+input[type='color']::-moz-color-swatch{
+    border-radius: 50%;
+}
+
+button, input{
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+}
+
+p{
+    font-size: 20px;
+}
+
+.drawingArea{
+    cursor: pointer;
+    height: 50vh;
+    width: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.drawingRow{
+    width: 100%;
+    background-color: white;
+}

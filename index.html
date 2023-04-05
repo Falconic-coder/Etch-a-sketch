@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="shortcut icon" href="Icons\pen.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="heading">Etch-a-Sketch</h1>
+    </header>
+
+    <main>
+
+        <div class="customizationArea">
+
+            <div class="colourPicker">
+                <input id="colorPicker" type="color" value="#333333">
+            </div>
+
+            <div class="buttons">
+                <div class="ColourMode">
+                    <button>Colour Mode</button>
+                </div>
+    
+                <div class="rainbowMode">
+                    <button>Rainbow Mode</button>
+                </div>
+    
+                <div class="Eraser">
+                    <button>Eraser</button>
+                </div>
+    
+                <div class="Clear">
+                    <button onclick="clearDrawingArea()">Clear</button>
+                </div>
+            </div>
+
+            <div class="gridSize">
+                <p id="size">16 x 16</p>
+                <input id="sizeSlider" type="range" value="16" min="1" max="64">
+            </div>
+        </div>
+
+        <div class="drawingArea"></div>
+
+    </main>
+
+
+    <script src="script.js" defer></script>
+    
+</body>
+
+</html>
