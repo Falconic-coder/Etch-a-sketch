@@ -109,3 +109,27 @@ p{
     width: 100%;
     background-color: white;
 }
+
+.gridSize > input{
+    -webkit-appearance: none;
+    background: white;
+    border-radius: 10px;
+    height: 10px;
+    outline: solid 2px black;
+}
+
+.gridSize > input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+}
+  
+.gridSize > input::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+}
