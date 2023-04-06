@@ -24,8 +24,8 @@ function creation(event){
     })
 }
 
-document.querySelector("input#sizeSlider").addEventListener("mousemove", () => creation("mouseout"));
-document.querySelector("input#sizeSlider").addEventListener("pointerup", () => creation("change")); // for devices which are not computer
+
+document.querySelector("input#sizeSlider").oninput = () => creation("change");
 
 
 let prevButton;
