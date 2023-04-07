@@ -85,7 +85,7 @@ function makeChangesToPixel(event){
     let doc = document.querySelectorAll(".buttons > div > button");
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
 
-    if(doc[0].style.backgroundColor !== "")
+    if(doc[0].style.backgroundColor !== "" && event.target.style.backgroundColor === "white")
         event.target.style.backgroundColor = `${document.querySelector(".colourPicker > input").value}`;
 
     if(doc[1].style.backgroundColor !== "" && event.target.style.backgroundColor === "white")
@@ -96,7 +96,7 @@ function makeChangesToPixel(event){
 }
 
 document.querySelector(".drawingArea").addEventListener('mousemove', (event) => makeChangesToPixel(event));
-document.querySelector(".drawingArea").addEventListener('pointermove', (event) => makeChangesToPixel(event)); // for devices which are not computer
+document.querySelector(".drawingArea").addEventListener('touchstart', (event) => makeChangesToPixel(event)); // for devices which are not computer
 
 
 function clearDrawingArea(){
